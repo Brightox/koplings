@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.header{
+    padding: 8px 16px;
+    background: #343A40;
+    display: flex;
+    
+}
+.header .box1{
+    flex: 2;
+}
+.header .box2{
+    flex: 1;
+    float: right;
+}
+.header h5{
+    color: #8AB200;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box1 .fa {
+    color: #343A40;
+    font-size: 20px;
+    margin: 8px 12px;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+
+}
+.box2 .fa{
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px;
+    margin: 5px;
+    box-shadow: 0px 2px;
+}
+.box2 .fa:hover{
+    background-color: blue;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    padding-left: 20px;
+    margin: 15px;
+}
+.logo .ic{
+    float: left;
+    padding: 8px;
+    font-size: 20px;
+    color: #42A5F5;
+}
+.logo .image{
+    padding-right: 30px;
+}
+.logo a{
+    text-decoration: none;
+    color: #343A40;
+}
+.logo .btn{
+    padding: 12px 20px;
+    background: #42A5F5;
+    color: #fff;
+    font-weight: 700;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background: #42A5F5;
+    z-index: 100;
+}
+.navbar ul{
+    margin: 0;
+    list-style-type: none;
+}
+.navbar ul li{
+    float: left;
+    margin: 8px 12px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.mySlides {display:none;}
+
+
+
+.intro{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.wel h1{
+    color: #343A40;
+}
+.prin{
+    text-align: right;
+}
+.prin h1{
+    color: #42A5F5;
+    font-weight: bolder;
+   text-shadow: 1px 2px rgba(238, 143, 230, 0.5);
+   font-style: italic;
+
+}
+.prin p{
+    font-size: 16px;
+    color: #343A40; 
+}
+.banner{
+    background-color: #343A40;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/header.PNG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    padding-bottom: 4.5rem;
+}
+.banner .inner{ 
+    display: flex;
+    justify-content: center;
+    max-height: 60vh;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    
+}
+.banner .box01 {
+    flex: 1;
+    text-align: center;
+
+}
+.banner .inner .box01 h1{
+    font-weight: bolder;
+    text-shadow: 1px 2px #343A40;
+    font-size: 40px;
+
+}
+/* .banner .inner .first h1::before{
+      content: "";
+      background: #45A6F5;
+      height: 5px;
+      width: 70px;
+      top: 42%;
+      bottom: 0;
+      margin-left: 2px;
+      left: 10%;
+      position: absolute;
+}
+.banner .inner .second h1::before{
+    content: "";
+    background: #45A6F5;
+    height: 5px;
+    width: 70px;
+    top: 42%;
+    bottom: 0;
+    margin-left: 4.5rem;
+    left: 31%;
+    position: absolute;
+}
+
+.banner .inner .third h1::before{
+    content: "";
+    background: #45A6F5;
+    height: 5px;
+    width: 70px;
+    top: 42%;
+    bottom: 0;
+    margin-left: 4.5rem;
+    left: 60%;
+    position: absolute;
+} */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.manage{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.manage .card{
+    cursor: pointer;
+    width: 230px;
+    height: 230px;
+}
+
+.manage .front,
+.manage .back{
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ backface-visibility: hidden;
+ position: absolute;
+ transition: transform .6s linear;
+}
+.manage .front img{
+    height: 100%;
+}
+.manage .front{
+    transform: perspective(600px) rotateY(0deg);
+}
+.manage .back{
+    background: #343A40;
+    color: #fff;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.service{
+    background-color: #343A40;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/Copy.PNG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding-top: 5.5rem;
+    padding-bottom: 4.5rem;
+}
+.service .wel h1{
+    color: #fff;
+}
+
+.service .ikon{
+    float: left;
+}
+.service .ikon .fa{
+    font-size: 25px;
+    color: #42A5F5;
+    border: 1px solid #fff;
+    padding: 18px;
+    border-radius: 2.5px;
+    transition: 0.2s;
+}
+.service .ikon .fa:hover{
+    color: #fff;
+    background: #42A5F5;
+    transition: 0.2s;
+}
+
+.service .read{   
+    font-size: 16px;
+    text-decoration: none;
+    padding-right: 15px;
+    color: #42A5F5;
+    font-weight: bolder;
+
+}
+.service .read:hover{
+    color: #fff;
+    transition: 0.1s;
+}
+.video{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.video .date{
+    border: 1px solid #42A5F5;
+    background: #42A5F5;
+    padding: 12px;
+    width: 40px;
+    height: 120px;
+    margin-right: 15px;
+}
+
+.video .time .fa{
+    color: #42A5F5;
+}
+.video .events{
+    display: flex;
+}
+.video .events .box01{
+    flex: 1
+}
+.video .events .box02{
+    flex: 3;
+}
+
+@media (max-width: 760px){
+    .video .date{
+        border: 1px solid #42A5F5;
+        background: #42A5F5;;
+        padding: 5px;
+        width: 15px;
+        height: 120px;
+    }   
+   .news .session{
+        background-color: yellow; 
+        color: #fff; 
+        width: 481px;
+         padding:8px;
+          margin-right: 30px;
+    }
+}
+.testimony{
+    background-color: #343A40;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/next.PNG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+    padding-top: 8.5rem;
+    padding-bottom: 13rem;
+
+}
+
+
+.news{
+    padding-top: 4.5rem;
+    padding-bottom: 8.5rem;
+}
+.news .session{
+    background-color: green;
+     color: #fff;
+      width: 481px;
+    padding: 8px;
+     margin-right: -30px;"
+}
+
+.footer{
+    padding-top: 4.5rem;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/footer.PNG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff; 
+}
+.footer .maya{
+    padding-top: 15rem;
+}
+.footer .address{
+    width: 255px;
+    height: 150px;
+    background-color: #42A5F5;
+    color: #fff;
+    border-radius: 5px;
+    padding-top: 1rem;
+}
+.footer .foot{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+
+}
+.footer .foot .res{
+    flex: 2;
+}
+.footer .foot .res .ref{
+    text-decoration: none;
+}
+.footer .foot .res .ref:hover{
+    color: #fff;
+}
+.footer .foot .icon{
+    flex: 1;
+    float: right;
+    text-align: right;
+}
+
+.footer .foot .icon .fa{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    margin: 5px 5px 0px 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 0.5px solid #fff;
+    border-radius: 50px;
+    box-shadow: 1px 2px;
+}
+.footer .foot .icon .fa:hover{
+    background-color: #42A5F5;
+}
+.footer .subscribe-form{
+    position: relative;
+}
+.footer #mc-form{
+    margin: 0;
+    padding: 0;
+}
+.footer #mc-form input[type="email"]{
+    height: 6rem;
+    padding: 1.5rem 8rem 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background-color: rgba(109, 107, 107, 0.6);
+    border: none;
+}
+.footer #mc-form button{
+    background-color: #42A5F5;
+    color: #fff;
+    width: 12rem;
+    height: 6rem;
+    line-height: 6rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #42A5F5;
+}
+.footer #mc-form button:hover{
+    background-color: black;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+
+/* rotate */
+.rotate{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.card-wrapper{
+    height: 230px;
+    height: 230px;
+    perspective: 1000px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.card-wrapper:hover .content{
+    transform: rotateY(180deg);
+    transition: 0.7s;
+} 
+.face-front,
+.face-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.face-back{
+    transform: rotateY(-180deg);
+    top: 30%;
+}
